@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack - BotNet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen">
+
+    <!-- Banner -->
+    <div class="text-center mb-6 text-purple-400 text-2xl font-bold">
+        <pre>
+█████╗ ██████╗ ██╗███████╗███████╗
+██╔══██╗██╔══██╗██║██╔════╝██╔════╝
+███████║██████╔╝██║███████╗█████╗  
+██╔══██║██╔══██╗██║╚════██║██╔══╝  
+██║  ██║██║  ██║██║███████║███████╗
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝
+        </pre>
+    </div>
+
+    <!-- Form Inputs -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-80">
+        <label class="block mb-2">Enter the IP address:</label>
+        <input type="text" id="ip" class="w-full p-2 mb-3 bg-gray-700 text-white rounded">
+
+        <label class="block mb-2">Enter the PORT:</label>
+        <input type="text" id="port" class="w-full p-2 mb-3 bg-gray-700 text-white rounded">
+
+        <label class="block mb-2">Enter the TIME:</label>
+        <input type="text" id="time" class="w-full p-2 mb-3 bg-gray-700 text-white rounded">
+
+        <label class="block mb-2">Enter the METHOD:</label>
+        <input type="text" id="method" class="w-full p-2 mb-3 bg-gray-700 text-white rounded">
+
+        <button onclick="sendRequest()" class="w-full bg-purple-600 p-2 rounded hover:bg-purple-700">Send</button>
+    </div>
+
+    <!-- Result Display -->
+    <div id="result" class="mt-4 text-center text-cyan-400 hidden"></div>
+
+    <!-- Link to External JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
